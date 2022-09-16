@@ -1,0 +1,31 @@
+{
+  "name": "vue-functions",
+  "version": "2.0.6",
+  "description": "",
+  "main": "dist/vue-functions.cjs.js",
+  "module": "dist/vue-functions.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "compile-scripts": "tsc --target ES6 --module CommonJS scripts/build.ts",
+    "build": "rollup -c scripts/build.js & node scripts/build.js --report"
+  },
+  "author": "phphe <phphe@outlook.com> (https://github.com/phphe)",
+  "unpkg": "dist/vue-functions.js",
+  "bugs": {
+    "url": "https://github.com/phphe/vue-functions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phphe/vue-functions.git"
+  },
+  "devDependencies": {
+    "rogo": "^2.0.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "helper-js": "^2.0.0"
+  },
+  "license": "MIT"
+}
